@@ -109,6 +109,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/Certificates/ias-root.cer"
   install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/Certificates/SFSRootCAG2.crt"
   install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/Certificates/textsecure.cer"
+  install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/Certificates/imbox.cer"
   install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/schema.sql"
   install_resource "${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle"
 fi
@@ -125,6 +126,7 @@ if [[ "$CONFIGURATION" == "App Store Release" ]]; then
   install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/Certificates/ias-root.cer"
   install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/Certificates/SFSRootCAG2.crt"
   install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/Certificates/textsecure.cer"
+  install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/Certificates/imbox.cer"
   install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/schema.sql"
   install_resource "${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle"
 fi
@@ -141,6 +143,7 @@ if [[ "$CONFIGURATION" == "Testable Release" ]]; then
   install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/Certificates/ias-root.cer"
   install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/Certificates/SFSRootCAG2.crt"
   install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/Certificates/textsecure.cer"
+  install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/Certificates/imbox.cer"
   install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/schema.sql"
   install_resource "${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle"
 fi

@@ -31,8 +31,8 @@ public func owsFailDebug(_ logMessage: String,
                          line: Int = #line) {
     Logger.error(logMessage, file: file, function: function, line: line)
     Logger.flush()
-    let formattedMessage = owsFormatLogMessage(logMessage, file: file, function: function, line: line)
-    assertionFailure(formattedMessage)
+    //let formattedMessage = owsFormatLogMessage(logMessage, file: file, function: function, line: line)
+    //assertionFailure(formattedMessage)
 }
 
 @inlinable

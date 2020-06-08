@@ -106,14 +106,12 @@ NS_ASSUME_NONNULL_BEGIN
     do {                                                                                                               \
         OWSLogError(_messageFormat, ##__VA_ARGS__);                                                                    \
         OWSLogFlush();                                                                                                 \
-        OWSFailWithoutLogging(_messageFormat, ##__VA_ARGS__);                                                          \
     } while (0)
 
 #define OWSCFailDebug(_messageFormat, ...)                                                                             \
     do {                                                                                                               \
         OWSLogError(_messageFormat, ##__VA_ARGS__);                                                                    \
         OWSLogFlush();                                                                                                 \
-        OWSCFailWithoutLogging(_messageFormat, ##__VA_ARGS__);                                                         \
     } while (NO)
 
 void SwiftExit(NSString *message, const char *file, const char *function, int line);
