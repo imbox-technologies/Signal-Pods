@@ -1,0 +1,6 @@
+framework module Pods_IMBox_Phone {
+  umbrella header "Pods-IMBox Phone-umbrella.h"
+
+  export *
+  module * { export * }
+}

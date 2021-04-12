@@ -107,9 +107,9 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/Certificates/GTSR3.crt"
   install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/Certificates/GTSR4.crt"
   install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/Certificates/ias-root.cer"
+  install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/Certificates/imbox.cer"
   install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/Certificates/SFSRootCAG2.crt"
   install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/Certificates/textsecure.cer"
-  install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/Certificates/imbox.cer"
   install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/schema.sql"
   install_resource "${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle"
 fi
@@ -124,9 +124,9 @@ if [[ "$CONFIGURATION" == "App Store Release" ]]; then
   install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/Certificates/GTSR3.crt"
   install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/Certificates/GTSR4.crt"
   install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/Certificates/ias-root.cer"
+  install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/Certificates/imbox.cer"
   install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/Certificates/SFSRootCAG2.crt"
   install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/Certificates/textsecure.cer"
-  install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/Certificates/imbox.cer"
   install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/schema.sql"
   install_resource "${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle"
 fi
@@ -141,9 +141,9 @@ if [[ "$CONFIGURATION" == "Testable Release" ]]; then
   install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/Certificates/GTSR3.crt"
   install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/Certificates/GTSR4.crt"
   install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/Certificates/ias-root.cer"
+  install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/Certificates/imbox.cer"
   install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/Certificates/SFSRootCAG2.crt"
   install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/Certificates/textsecure.cer"
-  install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/Certificates/imbox.cer"
   install_resource "${PODS_ROOT}/../SignalServiceKit/Resources/schema.sql"
   install_resource "${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle"
 fi
@@ -159,7 +159,7 @@ rm -f "$RESOURCES_TO_COPY"
 if [[ -n "${WRAPPER_EXTENSION}" ]] && [ "`xcrun --find actool`" ] && [ -n "${XCASSET_FILES:-}" ]
 then
   # Find all other xcassets (this unfortunately includes those of path pods and other targets).
-  OTHER_XCASSETS=$(find "$PWD" -iname "*.xcassets" -type d)
+  OTHER_XCASSETS=$(find -L "$PWD" -iname "*.xcassets" -type d)
   while read line; do
     if [[ $line != "${PODS_ROOT}*" ]]; then
       XCASSET_FILES+=("$line")
