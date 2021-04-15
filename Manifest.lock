@@ -234,9 +234,9 @@ PODS:
     - YYImage/Core
   - ZKGroup (0.0.1)
   - ZKGroup/Tests (0.0.1)
-  - ZXingObjC (3.6.4):
-    - ZXingObjC/All (= 3.6.4)
-  - ZXingObjC/All (3.6.4)
+  - ZXingObjC (3.6.5):
+    - ZXingObjC/All (= 3.6.5)
+  - ZXingObjC/All (3.6.5)
 
 DEPENDENCIES:
   - ActiveLabel
@@ -273,7 +273,7 @@ DEPENDENCIES:
   - YYImage
   - ZKGroup (from `https://github.com/signalapp/signal-zkgroup-swift`)
   - ZKGroup/Tests (from `https://github.com/signalapp/signal-zkgroup-swift`)
-  - ZXingObjC (from `https://github.com/TheLevelUp/ZXingObjC`)
+  - ZXingObjC
 
 SPEC REPOS:
   trunk:
@@ -291,6 +291,7 @@ SPEC REPOS:
     - SSZipArchive
     - SwiftProtobuf
     - YYImage
+    - ZXingObjC
 
 EXTERNAL SOURCES:
   Argon2:
@@ -334,8 +335,6 @@ EXTERNAL SOURCES:
     :git: https://github.com/signalapp/YapDatabase.git
   ZKGroup:
     :git: https://github.com/signalapp/signal-zkgroup-swift
-  ZXingObjC:
-    :git: https://github.com/TheLevelUp/ZXingObjC
 
 CHECKOUT OPTIONS:
   Argon2:
@@ -381,9 +380,6 @@ CHECKOUT OPTIONS:
   ZKGroup:
     :commit: 06e500809d4f910187c3fffe878e5131193710d0
     :git: https://github.com/signalapp/signal-zkgroup-swift
-  ZXingObjC:
-    :commit: cac61d5404b3ee75fca58433dd2ae825c631e4ee
-    :git: https://github.com/TheLevelUp/ZXingObjC
 
 SPEC CHECKSUMS:
   ActiveLabel: 5e3f4de79a1952d4604b845a0610d4776e4b82b3
@@ -416,8 +412,8 @@ SPEC CHECKSUMS:
   YapDatabase: b418a4baa6906e8028748938f9159807fd039af4
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
   ZKGroup: b5fcf00855c58ffa45861d5427621d8a519f4314
-  ZXingObjC: 512b34b9b6920e8ef0461a4159d0814c5e48c28a
+  ZXingObjC: fdbb269f25dd2032da343e06f10224d62f537bdb
 
-PODFILE CHECKSUM: 349f05c3bc541be763994995188acb4d872389ba
+PODFILE CHECKSUM: 01e5dd29e4258bedec2e8c2bcc7330e08588691c
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.1

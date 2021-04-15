@@ -1,23 +1,18 @@
 PODS:
-  - ZXingObjC (3.6.4):
-    - ZXingObjC/All (= 3.6.4)
-  - ZXingObjC/All (3.6.4)
+  - ZXingObjC (3.6.5):
+    - ZXingObjC/All (= 3.6.5)
+  - ZXingObjC/All (3.6.5)
 
 DEPENDENCIES:
-  - ZXingObjC (from `https://github.com/TheLevelUp/ZXingObjC`)
+  - ZXingObjC
 
-EXTERNAL SOURCES:
-  ZXingObjC:
-    :git: https://github.com/TheLevelUp/ZXingObjC
-
-CHECKOUT OPTIONS:
-  ZXingObjC:
-    :commit: cac61d5404b3ee75fca58433dd2ae825c631e4ee
-    :git: https://github.com/TheLevelUp/ZXingObjC
+SPEC REPOS:
+  trunk:
+    - ZXingObjC
 
 SPEC CHECKSUMS:
-  ZXingObjC: 512b34b9b6920e8ef0461a4159d0814c5e48c28a
+  ZXingObjC: fdbb269f25dd2032da343e06f10224d62f537bdb
 
-PODFILE CHECKSUM: 235a522925cdbcf5cac12276650eb6c5a2c32b1c
+PODFILE CHECKSUM: 01e5dd29e4258bedec2e8c2bcc7330e08588691c
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.1
