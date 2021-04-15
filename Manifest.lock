@@ -240,7 +240,7 @@ PODS:
 
 DEPENDENCIES:
   - ActiveLabel
-  - AFNetworking
+  - AFNetworking (from `https://github.com/imbox-technologies/AFNetworking`, branch `imbox_phone`)
   - Argon2 (from `https://github.com/signalapp/Argon2.git`)
   - Argon2/Tests (from `https://github.com/signalapp/Argon2.git`)
   - AxolotlKit (from `https://github.com/signalapp/SignalProtocolKit.git`, branch `master`)
@@ -278,7 +278,6 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - ActiveLabel
-    - AFNetworking
     - CocoaLumberjack
     - GRDB.swift
     - libwebp
@@ -294,6 +293,9 @@ SPEC REPOS:
     - ZXingObjC
 
 EXTERNAL SOURCES:
+  AFNetworking:
+    :branch: imbox_phone
+    :git: https://github.com/imbox-technologies/AFNetworking
   Argon2:
     :git: https://github.com/signalapp/Argon2.git
     :submodules: true
@@ -337,6 +339,9 @@ EXTERNAL SOURCES:
     :git: https://github.com/signalapp/signal-zkgroup-swift
 
 CHECKOUT OPTIONS:
+  AFNetworking:
+    :commit: b19b447263a2e5fefc03e51b3b0268b9f124912c
+    :git: https://github.com/imbox-technologies/AFNetworking
   Argon2:
     :commit: 6da4513f13d60b8ae00348284d02f714c481d4d4
     :git: https://github.com/signalapp/Argon2.git
@@ -414,6 +419,6 @@ SPEC CHECKSUMS:
   ZKGroup: b5fcf00855c58ffa45861d5427621d8a519f4314
   ZXingObjC: fdbb269f25dd2032da343e06f10224d62f537bdb
 
-PODFILE CHECKSUM: bed1bd1bee2cafacebc19320edfb3c679275637a
+PODFILE CHECKSUM: bda97ba0f072ace5afd21c3c1eeefe04e2d97662
 
 COCOAPODS: 1.10.1
